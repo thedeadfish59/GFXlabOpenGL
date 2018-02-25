@@ -12,4 +12,4 @@ Our lecturer Shipu Madam recommends Microsoft Visual C++ , to make this program 
 
 further more questions can be asked on our group
 
-©thedeadfish59
+#You are free to fork and use codes :) 
