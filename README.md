@@ -1,4 +1,5 @@
-### GFXlabOpenGL
+### Computer Graphics LAB OpenGL Code Repo:
+
 All codes of Graphics Lab will be found here
 
 ### Building and compiling instructions:
@@ -9,6 +10,8 @@ All codes of Graphics Lab will be found here
 >>Paste glut32.dll to C:\Windows\System32\*here* and C:\Windows\SysWOW64\*here* [Note: If you dont have SysWOW64, just skip and paste only at system32]
 
 >>Paste glut.lib to C:\Program Files (x86)\CodeBlocks\MinGW\lib\*here* 
+
+Note: Where is these three files? Check just above ;)
 
 Okay, now open up codeblocks, and Go to settings>Compiler, here, you will find Linker Settings, click on add, just type this on
 
@@ -45,6 +48,7 @@ Then on Left pane, under Sources, there will be main.cpp, double click on that, 
 
 ![](https://github.com/thedeadfish59/GFXlabOpenGL/raw/master/Screenshots/8.png)
 
+### Obsoleted Instructions
 
 2>For Microsoft Visual C++ 6.0 
 Graphic codes which uses OpenGL library and runtime, needs some dependencies while compiling on any machine.
@@ -59,4 +63,5 @@ Our lecturer Shipu Madam recommends Microsoft Visual C++ , to make this program 
 
 further more questions can be asked on our group
 
-#You are free to fork and use codes :) 
+### You are free to fork and use codes :) 
+### thedeadfish59@github.com
