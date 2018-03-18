@@ -16,6 +16,8 @@ Note: Where is these three files? Check just above ;)
 Okay, now open up codeblocks, and Go to settings>Compiler, here, you will find Linker Settings, click on add, just type this on
 
 `C:\Program Files (x86)\CodeBlocks\MinGW\lib\glut32.lib`
+
+
 and hit okay, for better understanding, do just like below screenshot leads you to do! 
 
 ![](https://github.com/thedeadfish59/GFXlabOpenGL/raw/master/Screenshots/1.png)
