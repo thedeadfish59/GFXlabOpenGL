@@ -11,7 +11,10 @@ All codes of Graphics Lab will be found here
 
 >>Paste glut.lib to C:\Program Files (x86)\CodeBlocks\MinGW\lib\*here* 
 
-Note: Where is these three files? Check just above ;)
+Note: Where is these three files? Check just above, there is a zip ;) How to download? Check the pic below
+
+
+![](https://github.com/thedeadfish59/GFXlabOpenGL/raw/master/Screenshots/files.png)
 
 Okay, now open up codeblocks, and Go to settings>Compiler, here, you will find Linker Settings, click on add, just type this on
 
