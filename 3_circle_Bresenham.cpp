@@ -1,7 +1,17 @@
 #include<windows.h>
 #include<iostream.h>
 #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+#include<GL/gl.h>
+#include<GL/glu.h>
 #include<GL/glut.h>
+
+
+//const int screenWidth = 640*2;
+//const int screenHeight = 480*2;
+//GLdouble A,B,C,D; // values for scaling and shifting
 
 void myInit(void)
 {
@@ -16,7 +26,11 @@ void myInit(void)
   glLoadIdentity();
   //glOrtho(-1.0,1.0,-1.0, 1.0, -1.0, 1.0);
 
-   //set the viewing coordinates
+ // A = screenWidth/4.0; //Set values for scaling and shifting
+ // B= 0.0;
+ // C=D=screenHeight/2.0;
+
+  //set the viewing coordinates
   gluOrtho2D(0.0, 640.0, 0.0, 480.0);
 }
 

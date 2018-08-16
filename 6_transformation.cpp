@@ -7,8 +7,13 @@
 
 void init(void) 
 {
-   glClearColor (0.0, 0.0, 0.0, 0.0);
+glClearColor (0.0, 0.0, 0.0, 0.0);
    //glShadeModel (GL_FLAT);
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+glOrtho(-50.0, 50.0, -50.0, 50.0, -1.0, 1.0);
+glMatrixMode(GL_MODELVIEW);
+glLoadIdentity();
 }
 
 void draw_triangle(void)
@@ -49,28 +54,16 @@ void display(void)
    glFlush ();
 }
 
-void reshape (int w, int h)
+/*void reshape (int w, int h)
 {
-   glViewport (0, 0, (GLsizei) w, (GLsizei) h);
-   glMatrixMode (GL_PROJECTION);
-   glLoadIdentity ();
-   if (w <= h)
-      glOrtho (-50.0, 50.0, -50.0*(GLfloat)h/(GLfloat)w,
-         50.0*(GLfloat)h/(GLfloat)w, -1.0, 1.0);
-   else
-      glOrtho (-50.0*(GLfloat)w/(GLfloat)h,
-         50.0*(GLfloat)w/(GLfloat)h, -50.0, 50.0, -1.0, 1.0);
-   glMatrixMode(GL_MODELVIEW);
-}
-
-/*void keyboard(unsigned char key, int x, int y)
-{
-   switch (key) {
-      case 27:
-         exit(0);
-         break;
-   }
+glViewport (0, 0, (GLsizei) w, (GLsizei) h);
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+glOrtho(-50.0, 50.0, -50.0, 50.0, -1.0, 1.0);
+glMatrixMode(GL_MODELVIEW);
+glLoadIdentity();
 }*/
+
 
 int main(int argc, char** argv)
 {
@@ -81,7 +74,7 @@ int main(int argc, char** argv)
    glutCreateWindow (argv[0]);
    init ();
    glutDisplayFunc(display); 
-   glutReshapeFunc(reshape);
+   //glutReshapeFunc(reshape);
   // glutKeyboardFunc (keyboard);
    glutMainLoop();
    return 0;
