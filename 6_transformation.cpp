@@ -2,8 +2,15 @@
  *  model.c
  *  This program demonstrates modeling transformations
  */
-#include <GL/glut.h>
-#include <stdlib.h>
+#include<windows.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+#include<GL/gl.h>
+#include<GL/glu.h>
+#include<GL/glut.h>
+
 
 void init(void) 
 {
